@@ -38,4 +38,15 @@ function isPalindrome(int){
     return false;
 } 
 
-console.log(isPalindrome(10));
+
+
+const addBtn = document.querySelector("#addBtn");
+const numberDisplay = document.querySelector("#numberDisplay");
+let number1 = 0;
+
+addBtn.addEventListener('click', function(){
+    number1 = document.getElementById("num1").value;
+    numResult = parseInt(number1);    
+    numberDisplay.textContent = numResult;
+  
+  })
